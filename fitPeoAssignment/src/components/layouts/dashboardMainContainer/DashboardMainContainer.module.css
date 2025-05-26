@@ -1,0 +1,238 @@
+.mainContainer {
+  background-color: var(--white);
+  padding: 30px 20px;
+  min-width: 43%;
+  min-height: 100vh;
+}
+/* searchBar main section styel */
+.searchBarMainContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 1px var(--veryLightGray);
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  
+}
+.searchIconAndInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+.searchIcon,
+.bellIcon {
+  color: var(--blue);
+  flex-shrink: 0;
+}
+
+.inputField::placeholder {
+  color: var(--lightGray);
+
+  font-size: 16px;
+  font-weight: 600;
+}
+.inputField {
+  border: none;
+  outline: none;
+  width: 100%;
+  min-width: 0;
+}
+
+/* dashboard middle section style */
+.dashboardMiddleContainer{
+    margin-bottom: 20px;
+}
+.mainHeadingTxt {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--blue);
+}
+.subTxt {
+  font-size: 14px;
+  color: var(--blue);
+  font-weight: 600;
+}
+.topContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.rightSec {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.chevIcon {
+  color: var(--blue);
+}
+.middleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+.leftSec{
+  align-self: center;
+  max-width: 340px;
+   width: 100%;
+    overflow: visible;
+  aspect-ratio: 340 / 400;
+}
+.imgContainer {
+  position: relative;
+  height: 400px;
+ 
+  
+  background-color: var(--verylightBlue);
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 20px;
+ 
+  
+}
+.bodyImg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.bodySearchIcon {
+  color: var(--lightGray);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.rotationIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  left: 20px;
+}
+.rotationIcon {
+  color: var(--white);
+  background-color: var(--gray);
+  padding: 2px;
+  border-radius: 50%;
+}
+.line {
+  height: 1px;
+  flex: 1;
+  background-color: var(--gray);
+}
+.organSec {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;   
+   top: 19%;
+  right: -10%;
+}
+.legOrganSec{
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 5px;
+  bottom: 110px;
+  left:  -25px;
+}
+.scanner {
+  width: 45px;
+  height: 45px;
+  border: solid 1px var(--gray);
+  background: linear-gradient(
+    to bottom,
+    rgba(57, 53, 170, 0.4),
+    rgba(221, 226, 249, 0.255)
+  );
+  border-radius: 10px;
+}
+.organImg {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.organContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--blue);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.legOrganContent{
+    background-color: var(--skyBlue);
+}
+.organTxt {
+  font-size: 14px;
+  color: var(--white);
+  font-weight: 600;
+}
+.legOrganTxt{
+    color: var(--blue);
+}
+.detailsSec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .mainHeadingTxt {
+    font-size: 20px;
+  }
+  .mainContainer {
+    padding: 10px;
+  }
+  .subTxt {
+    font-size: 12px;
+  }
+  .middleContainer{
+    flex-direction: column;
+  }
+   .imgContainer{
+  margin-left: 0px;
+  }
+  
+  .bodySearchIcon{
+    top: 10px;
+    right: 10px;
+  }
+  .scanner{
+    width: 40px;
+    height: 40px;
+  }
+  .organContent{
+    padding: 5px;
+  }
+ .organTxt{
+  font-size: 12px;
+ }
+ .organImg{
+  width: 15px;
+  height: 15px;
+ }
+ .organSec{
+  right: 5%;
+  top: 20%;
+ }
+ .legOrganSec{
+  left: 7%;
+ }
+}

@@ -1,0 +1,128 @@
+.mainContainer{
+  background-color: var(--verylightBlue);
+  padding: 30px;
+  flex: 1;
+  min-height: 100vh;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.topContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.userIconContainer{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    padding: 5px;
+    background-color: var(--skyBlue);
+    border-radius: 5px;
+}
+.iconContainer{
+     width: 35px;
+    height: 35px;
+    object-fit: contain;
+    padding: 5px;
+    background-color: var(--blue);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topSec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+.heading {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--blue);
+}
+.heading2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.subHeading{
+    font-size: 16px;
+    color: var(--gray);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* calendar section style */
+.calendarMainContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.dayContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+.highlightedDayContainer{
+    background-color: var(--highlightBlue);
+    border-radius: 15px;
+    padding: 10px 20px;
+    
+}
+.day{
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: 700;
+}
+.date{
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--blue);
+}
+.time{
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+.blueHighlightTime{
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 7px;    
+}
+.lightBlueHighlightTime{
+     background-color: var(--purple);
+    color: var(--white);
+    border-radius: 7px;  
+}
+.disabled{
+    color: var(--purple);
+}
+.appointmentSec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+   
+}
+
+
+@media (max-width:768px){
+    .topContainer{
+        position: absolute;
+        top: 1%;
+        right: 4%;
+    }
+}
